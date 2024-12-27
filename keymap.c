@@ -251,14 +251,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_NUM] = LAYOUT_split_3x5_2(
         MO(_FN), KC_NO, QK_BOOT, KC_NO, KC_VOLU,                                  KC_MINS, KC_7, KC_8, KC_9, KC_ASTR, 
         KC_LGUI, KC_LALT, KC_LSFT, KC_LCTL, KC_VOLD,                          KC_DOT, KC_4, KC_5, KC_6, KC_0, 
-        EMAIL, KC_NO, KC_BSPC, KC_DEL, KC_NO,                               KC_PLUS, KC_1, KC_2, KC_3, KC_SLSH, 
-        KC_NO, KC_TRNS,                                                     KC_BSPC, KC_DEL),
+        EMAIL, KC_NO, KC_BSPC, KC_DEL, KC_MPLY,                               KC_PLUS, KC_1, KC_2, KC_3, KC_SLSH, 
+        KC_TRNS, MO(_FN),                                                     MO(_FN), KC_TRNS),
 
     // Function
     [_FN] = LAYOUT_split_3x5_2(
         KC_NO, KC_NO, QK_BOOT, KC_NO, KC_VOLU,                              KC_NO, KC_F7, KC_F8, KC_F9, KC_NO, 
         KC_LGUI, KC_LALT, KC_LSFT, KC_LCTL, KC_VOLD,                        KC_F12, KC_F4, KC_F5, KC_F6, KC_F10, 
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_MPLY,                          KC_F11, KC_F1, KC_F2, KC_F3, KC_NO, 
+        KC_NO, KC_NO, KC_NO, KC_NO, KC_MPLY,                                KC_F11, KC_F1, KC_F2, KC_F3, KC_NO, 
         KC_TRNS, KC_NO,                                                     KC_NO, KC_TRNS),
 };
 
@@ -270,8 +270,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 const uint16_t PROGMEM combo1[] = {SS_QU, KC_U, COMBO_END}; // Q+U -> Q
 const uint16_t PROGMEM combo17[] = {SS_QU, KC_M, COMBO_END}; // Q+M -> Q
 
-const uint16_t PROGMEM combo2[] = {HOME_K, HOME_G, COMBO_END}; // K+G -> ESC
-const uint16_t PROGMEM combo3[] = {HOME_X, HOME_K, COMBO_END}; // X+K -> Tab
+// const uint16_t PROGMEM combo2[] = {HOME_K, HOME_G, COMBO_END}; // K+G -> ESC
+// const uint16_t PROGMEM combo3[] = {HOME_X, HOME_K, COMBO_END}; // X+K -> Tab
 
 // const uint16_t PROGMEM combo4[] = {KC_F, HOME_S, COMBO_END}; // F+S -> Grave `
 // const uint16_t PROGMEM combo5[] = {KC_R, HOME_N, COMBO_END}; // R+N -> Less than <
@@ -281,8 +281,8 @@ const uint16_t PROGMEM combo3[] = {HOME_X, HOME_K, COMBO_END}; // X+K -> Tab
 
 // Right Hand
 const uint16_t PROGMEM combo9[] = {HOME_CN, HOME_QT, COMBO_END}; // /+' -> Enter
-const uint16_t PROGMEM combo10[] = {HOME_G, HOME_L, COMBO_END};     // G+L -> Caps Word
-const uint16_t PROGMEM combo11[] = {HOME_L, HOME_CM, COMBO_END};    // L+/ -> Delete Bot
+// const uint16_t PROGMEM combo10[] = {HOME_G, HOME_L, COMBO_END};     // G+L -> Caps Word
+// const uint16_t PROGMEM combo11[] = {HOME_L, HOME_CM, COMBO_END};    // L+/ -> Delete Bot
 
 // const uint16_t PROGMEM combo12[] = {SS_QU, KC_DOT, COMBO_END}; // Q+. -> Right Brace ]
 // const uint16_t PROGMEM combo13[] = {KC_M, HOME_H, COMBO_END};  // M+H -> Right Parenthesis )
@@ -296,8 +296,8 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo1, KC_Q), // Q+U -> Q
     COMBO(combo17, KC_Q), // Q+M -> Q
 
-    COMBO(combo2, KC_ESC), // K+G -> ESC
-    COMBO(combo3, KC_TAB), // X+K -> Tab
+    // COMBO(combo2, KC_ESC), // K+G -> ESC
+    // COMBO(combo3, KC_TAB), // X+K -> Tab
 
     // COMBO(combo4, KC_GRV),  // F+S -> Grave `
     // COMBO(combo5, KC_LT),   // R+N -> Less than <
@@ -307,8 +307,8 @@ combo_t key_combos[COMBO_COUNT] = {
 
     // Right Hand
     COMBO(combo9, KC_ENT),  // /+' -> Enter
-    COMBO(combo10, CW_TOGG), // G+L -> Caps Word
-    COMBO(combo11, KC_DEL),  // L+/ -> Delete Bot
+    // COMBO(combo10, CW_TOGG), // G+L -> Caps Word
+    // COMBO(combo11, KC_DEL),  // L+/ -> Delete Bot
 
     // COMBO(combo12, KC_RBRC), // Q+. -> Right Brace ]
     // COMBO(combo13, KC_RPRN), // M+H -> Right Parenthesis )
