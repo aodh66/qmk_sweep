@@ -11,5 +11,5 @@
 //Combo stuff
 #define COMBO_COUNT 18
 
-#define MASTER_RIGHT
-
+// #define MASTER_RIGHT
+#define MASTER_LEFT

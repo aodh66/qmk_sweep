@@ -1,0 +1,3 @@
+//   name     result    chord keys
+COMB(QU_Q,   KC_Q,   SS_QU, KC_U)
+COMB(QM_Q,   KC_Q,   SS_QU, KC_M)
